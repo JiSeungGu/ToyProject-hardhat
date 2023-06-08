@@ -12,12 +12,15 @@ const config: HardhatUserConfig = {
 
     // 로컬호스트 테스트 
     localhost: {
-       url: "http://0.0.0.0:8545",
-     },
-     ec2: {
-      url: "http://3.36.159.109:8545", // EC2 인스턴스의 IP 주소
-    },     // ... 기타 네트워크 설정
-  },
+      url: "http://0.0.0.0:8545",
+    },
+   ec2: {
+   url: "http://0.0.0.0:8545", 
+   accounts: ["0xde9be858da4a475276426320d5e9262ecfc3ba460bfac56360bfa6c4c28b4ee0"],
+   },     //기타 네트워크 설정
+ },
 };
+
+
 
 export default config;
